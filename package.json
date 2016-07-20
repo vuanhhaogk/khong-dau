@@ -1,0 +1,28 @@
+{
+  "name": "khong-dau",
+  "version": "1.0.0",
+  "description": "Convert Vietnamese characters to Latin characters",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuanhhaogk/khong-dau.git"
+  },
+  "keywords": [
+    "Vietnamese",
+    "Language",
+    "NodeJS",
+    "Javascript",
+    "Server",
+    "Client",
+    "Converter"
+  ],
+  "author": "Vu Anh Hao <vuanhhaogk@gmail.com> (http://xn--vanhhoblog-l4a35n.vn)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vuanhhaogk/khong-dau/issues"
+  },
+  "homepage": "https://github.com/vuanhhaogk/khong-dau#readme"
+}
