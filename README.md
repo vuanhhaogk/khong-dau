@@ -2,12 +2,7 @@
 
 _Node Module dành cho người Việt_
 
-**Yêu cầu**
-
-```
-nodejs: ^0.10.40
-npm: ^1.4.28
-```
+[![Tieng Viet khong dau](https://img.shields.io/badge/node-%5E0.10.40-brightgreen.svg)](//www.npmjs.com/package/khong-dau) [![Tieng Viet khong dau](https://img.shields.io/badge/npm-%5E1.4.28-brightgreen.svg)](//www.npmjs.com/package/khong-dau)
 
 ## Cài đặt
 
