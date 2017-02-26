@@ -18,3 +18,5 @@ console.log(tvkd.cUpperCase(alphabet));
 console.log('\n*** Than thien URI ***\n');
 console.log(tvkd.cFriendlyURI(str));
 console.log(tvkd.cFriendlyURI(alphabet));
+
+console.log(tvkd.c({}));
