@@ -15,9 +15,9 @@ $ npm install --save khong-dau
 ### Đối với NodeJS
 
 ```javascript
-var tvkd = require('khong-dau');
+var KhongDau = require('khong-dau');
 
-console.log(tvkd.c('Hoàng Sa, Trường Sa là của Việt Nam'));
+console.log(KhongDau('Hoàng Sa, Trường Sa là của Việt Nam'));
 
 // Kết quả: Hoang Sa, Truong Sa la cua Viet Nam
 ```
@@ -25,31 +25,45 @@ console.log(tvkd.c('Hoàng Sa, Trường Sa là của Việt Nam'));
 ### Đối với Javascript phía Font-end
 
 ```html
-<script src="lib/tvkd.js"></script>
+<script src="lib/khongdau.js"></script>
 ```
 
 ```js
-console.log(tvkd.c('Hoàng Sa, Trường Sa là của Việt Nam'));
+console.log(KhongDau('Hoàng Sa, Trường Sa là của Việt Nam'));
 // Kết quả: Hoang Sa, Truong Sa la cua Viet Nam
 ```
 
 ## API
 
-**tvkd.c( str )**
+> Lưu ý: Bạn vẫn có thể sử dụng cú pháp của phiên bản trước **1.0.0**
 
-Chuyển chuỗi tiếng Việt sang tiếng Việt không dấu
+**KhongDau(str [, rules])**
 
-**tvkd.cLowerCase( str )**
+Trong đó `rules` là một mảng quy định cách chuyển đổi, gồm:
 
-Chuyển chuỗi tiếng Việt sang tiếng Việt không dấu và bỏ viết hoa
+    + "chuyen" (Chuyển đổi từ Tiếng Việt sang Latin Alphabet)
+    + "url" (Chuẩn hóa chuỗi để sử dụng cho các liên kết)
+    + "file" (Chuẩn hóa chuỗi để sử dụng làm tên file)
 
-**tvkd.cUpperCase( str )**
+Ví dụ:
 
-Chuyển chuỗi tiếng Việt sang tiếng Việt không dấu và viết hoa toàn bộ
+```js
 
-**tvkd.cFriendlyURI( str )**
+var str = 'Hoàng Sa - Trường Sa là của Việt Nam';
 
-Chuyển chuỗi tiếng Việt cho thân thiện với các đường dẫn (link)
+console.log('\n*** Bo dau ***\n');
+console.log(KhongDau(str));
+// Hoang Sa - Truong Sa la cua Viet Nam
+
+console.log('\n*** URL sau khi Bo Dau***\n');
+console.log(KhongDau(str, ["chuyen", "url"]));
+// Hoang-Sa-Truong-Sa-la-cua-Viet-Nam
+
+console.log('\n*** FILE sau khi Bo Dau ***\n');
+console.log(KhongDau(str, ["chuyen", "file"]));
+// Hoang Sa - Truong Sa la cua Viet Nam
+
+```
 
 ## Demo
 

@@ -1,20 +1,16 @@
-var tvkd = require('./index.js');
+var KhongDau = require('./index.js');
 
 var str = 'Hoàng Sa - Trường Sa là của Việt Nam';
 var alphabet = 'abcdefghijklmnopqrstuvxyzABCDEFGHIJKLMNOPQRSTUVXYZáàảãạăắằẳẵặâấầẩẫậAÀẢÃẠĂẮẰẲẴẶÂẤẦẨẪẬđĐéèẻẽẹêếềểễệÉÈẺẼẸÊẾỀỂỄỆíìỉĩịÍÌỈĨỊóòỏõọôốồổỗộơớờởỡợÓÒỎÕỌÔỐỒỔỖỘƠỚỜỞỠỢúùủũụưứừửữựÚÙỦŨỤƯỨỪỬỮỰýỳỷỹỵÝỲỶỸỴ';
 
 console.log('\n*** Bo dau ***\n');
-console.log(tvkd.c(str));
-console.log(tvkd.c(alphabet));
+console.log(KhongDau(str));
+console.log(KhongDau(alphabet));
 
-console.log('\n*** Bo dau, bo hoa ***\n');
-console.log(tvkd.cLowerCase(str));
-console.log(tvkd.cLowerCase(alphabet));
+console.log('\n*** URL sau khi Bo Dau***\n');
+console.log(KhongDau(str, ["chuyen", "url"]));
+console.log(KhongDau(alphabet, ["chuyen", "url"]));
 
-console.log('\n*** Bo dau, viet hoa ***\n');
-console.log(tvkd.cUpperCase(str));
-console.log(tvkd.cUpperCase(alphabet));
-
-console.log('\n*** Than thien URI ***\n');
-console.log(tvkd.cFriendlyURI(str));
-console.log(tvkd.cFriendlyURI(alphabet));
+console.log('\n*** FILE sau khi Bo Dau ***\n');
+console.log(KhongDau(str, ["chuyen", "file"]));
+console.log(KhongDau(alphabet, ["chuyen", "file"]));

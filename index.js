@@ -1,1 +1,1 @@
-module.exports = require('./lib/tvkd.js');
+module.exports = require('./lib/khongdau.js');

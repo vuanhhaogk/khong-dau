@@ -1,6 +1,6 @@
 {
   "name": "khong-dau",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Convert Vietnamese characters to Latin characters",
   "main": "index.js",
   "scripts": {
