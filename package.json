@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/vuanhhaogk/khong-dau/issues"
   },
-  "homepage": "https://github.com/vuanhhaogk/khong-dau#readme"
+  "homepage": "https://github.com/vuanhhaogk/khong-dau#readme",
+  "dependencies": {
+    "sanitize-filename": "^1.6.1"
+  }
 }
