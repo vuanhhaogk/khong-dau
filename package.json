@@ -4,7 +4,8 @@
   "description": "Convert Vietnamese characters to Latin characters",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "coverage": "nyc npm run test"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,9 @@
   },
   "homepage": "https://github.com/vuanhhaogk/khong-dau#readme",
   "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1",
+    "nyc": "^15.1.0",
     "sanitize-filename": "^1.6.1"
   }
 }
