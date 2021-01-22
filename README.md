@@ -69,6 +69,10 @@ console.log(KhongDau(str, ["chuyen", "file"]));
 
 [Xem thêm ví dụ](./demo.js)
 
+## Thay thế
+
+Bạn có thể sử dụng thư viện [transliteration](https://www.npmjs.com/package/transliteration) để thay thế. Thư viện này không chỉ chuyển đổi tiếng Việt mà còn nhiều ngôn ngữ khác.
+
 ## Giấy phép
 
 MIT
